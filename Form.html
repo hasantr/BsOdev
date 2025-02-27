@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FormOdev</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+  <style>
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    /* Firefox */
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+  </style>
+
+
+</head>
+<body style="margin: 70px">
+<form action="">
+  <div class="border border-primary rounded container">
+
+
+    <div class="my-3 row">
+      <div class="col-4 me-auto">
+        <input type="number" class="form-control" placeholder="Tc No">
+      </div>
+      <div class="col-7">
+        <input type="text" class="form-control" placeholder="Ad Soyad">
+      </div>
+    </div>
+
+
+
+    <div class="mb-3 row">
+      <div class="col-4 me-auto">
+        <input type="number" class="form-control" id="phoneNumber" placeholder="GSM">
+      </div>
+      <div class="col-7">
+        <input class="form-control" type="text" placeholder="select">
+      </div>
+    </div>
+
+
+
+    <div class=" mb-3" >
+      <label class="mb-3 d-block form-label">Hobiler</label>
+
+      <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" id="hobby1" value="hobbyoption1">
+        <label class="form-check-label" for="hobby1">Koşu</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" id="hobby2" value="hobbyoption2">
+        <label class="form-check-label" for="hobby2">Dağcılık</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" id="hobby3" value="hobbyoption3">
+        <label class="form-check-label" for="hobby3">Yüzme</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" id="hobby4" value="hobbyoption4">
+        <label class="form-check-label" for="hobby4">Teknoloji</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input type="checkbox" class="form-check-input" id="hobby5" value="hobbyoption5">
+        <label class="form-check-label" for="hobby5">Fotoğraf</label>
+      </div>
+    </div>
+
+
+    <div class=" mb-3 d-flex">
+      <label class="form-label me-auto">Askerlik Durumu:</label>
+
+      <div class="form-check-inline">
+        <div class="form-check form-check-inline">
+          <input type="radio" class="form-check-input" id="askerlik1" value="askerlikOption1">
+          <label class="form-label" for="askerlik1">Yaptı</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input type="radio" class="form-check-input" id="askerlik2" value="askerlikOption2">
+          <label class="form-label" for="askerlik1">Tecilli</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input rows="2" type="radio" class="form-check-input" id="askerlik3" value="askerlikOption3" ></input>
+          <label class="form-label" for="askerlik3">Kaçak</label>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class=" row  mb-3">
+      <div class="col-4 me-auto">
+        <label class=" orm-label " for="address">Adres:</label>
+      </div>
+      <div class="col-7">
+
+
+        <textarea class="form-control" name="" id="address"  rows="3"></textarea>
+      </div>
+    </div>
+
+
+    <div class=" mb-3">
+      <div class="mb-3">
+        <label for="imageUpload" class="form-label">Resim Yükle</label>
+        <input type="file" multiple class="form-control" id="imageUpload"
+               class="form-control-file"
+               accept=".jpg,.png" >
+      </div>
+    </div>
+
+
+  </div>
+</form>
+</body>
+</html>
